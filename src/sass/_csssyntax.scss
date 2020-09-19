@@ -1,0 +1,29 @@
+body{
+    background-color: $lightblue;
+}
+
+.navmeny{
+    float: left;
+    margin-top: 15px;
+
+    a {
+        @include menyoptions($underline: false);
+        @include mobile();
+    }
+
+    a.active{
+        @extend a;
+        background-color: $green;
+        color: $white;
+    }
+}
+
+img{
+    @include images();
+}
+
+p{
+    width: 100%;
+    clear: left;
+    margin-top: 90px;
+}

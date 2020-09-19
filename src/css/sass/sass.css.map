@@ -1,0 +1,1 @@
+{"version":3,"file":"sass.css","sources":["sass/sass.scss"],"sourcesContent":["$blue: rgb(76, 37, 219);\r\n\r\nheader{\r\n    background-color: $blue;\r\n    color: $blue;\r\n}"],"names":[],"mappings":"AAEA,AAAA,MAAM,CAAA;EACF,gBAAgB,EAHb,OAAgB;EAInB,KAAK,EAJF,OAAgB,GAKtB"}

@@ -1,0 +1,29 @@
+@mixin menyoptions($underline: true) {
+    padding: 14px 16px;
+    font-size: 17px;
+    text-align: center;
+    color: $white;
+    background-color: $gray;
+
+    @if $underline{
+        text-decoration: underline;
+    }
+    @else{
+        text-decoration: none;
+    }
+}
+
+@mixin images {
+    max-width: 100%;
+    height: auto;
+    padding-top: 30px;
+    left: 0px;
+    overflow: auto;
+}
+
+@mixin mobile {
+    @media screen and (max-width: #{$breakpoint-mobile}){
+        display: block;
+        font-size: 21px;
+    }
+}
