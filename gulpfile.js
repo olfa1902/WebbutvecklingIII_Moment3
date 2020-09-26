@@ -7,6 +7,7 @@ const browsersync = require("browser-sync").create();
 const sass = require("gulp-sass");
 sass.compiler = require("node-sass");
 const sourcemaps = require("gulp-sourcemaps");
+const babel = require("gulp-babel");
 
 // File paths
 const files = {
@@ -26,8 +27,12 @@ function copyHTML() {
 //Concatinate and minify Js-files
 function jsTask(){
     return src(files.jsPath)
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['@babel/preset-env']
+        }))
         .pipe(concat('scripts.js'))
-        .pipe(uglify())
+        .pipe(sourcemaps.write("/."))
         .pipe(dest('pub/js'));
 }
 
