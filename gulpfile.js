@@ -14,7 +14,7 @@ const files = {
     htmlPath: "src/**/*.html",
     cssPath: "src/**/*.css",
     jsPath: "src/**/*.js",
-    imgPath: ("src/**/*.jpg", "src/**/*.png", "src/**/*.gif", "src/**/*.pdf", "src/**/*.webp"),
+    imgPath: ("src/**/*.jpg"),
     sassPath: "src/**/*.scss"
 }
 
